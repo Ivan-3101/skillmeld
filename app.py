@@ -37,7 +37,7 @@ pages = [
     "Technical",
     "Finance",
     "Business",
-]  # Add "Business" to the list of pages
+] 
 page = st.sidebar.selectbox("Select Page", pages)
 
 
@@ -45,7 +45,7 @@ page = st.sidebar.selectbox("Select Page", pages)
 def home_page():
     st.title("Career Prediction App - Home")
 
-    # Add steps to use the app
+    # how to use the app
     st.header("How to Use the App:")
     st.write("1. Choose a Domain")
     st.write("2. Adjust the skill levels using sliders in the sidebar.")
@@ -93,7 +93,7 @@ def technical_page():
         max_prob_index = np.argmax(probabilities)
         predicted_career = list(prospects_dict.keys())[max_prob_index]
 
-        # HTML styling for increased font size and color
+        # HTML styling
         styled_predicted_career = (
             f'<p style="font-size:34px; color:green;"><b>{predicted_career}</b></p>'
         )
@@ -107,14 +107,14 @@ def technical_page():
         for key, value in job_info.items():
             st.write(f"**{key}:** {value}")
 
-        # Create an expander for detailed predictions
+        # Creating an expander for detailed predictions
         with st.expander("Prediction Probabilities"):
             # Display probabilities
             for i, prob in enumerate(probabilities[0]):
                 st.write(f"{list(prospects_dict.keys())[i]}: {prob * 100:.2f}%")
 
             # Display additional information based on probability threshold
-            threshold = 5  # You can adjust this threshold
+            threshold = 5  
             selected_jobs = [
                 list(prospects_dict.keys())[i]
                 for i, prob in enumerate(probabilities[0])
@@ -147,7 +147,6 @@ def finance_page():
 
     # Condition to display the steps only when the button is not clicked
     if not predict_button_clicked_finance:
-        # Add steps to use the app
         st.header("How to Use the App:")
         st.write("1. Adjust skill levels using sliders in the sidebar.")
         st.write("2. Click the 'Predict Roles' button above.")
@@ -214,10 +213,10 @@ elif page == "Technical":
     technical_page()
 elif page == "Finance":
     finance_page()
-elif page == "Business":  # Add this block for the Business page
+elif page == "Business": 
     business_page()
 
-# Add an "About" section at the bottom of the main content area
+# "About" section
 st.markdown("## About This App")
 st.info(
     "This web application predicts your career based on your inputted skill levels. "
@@ -229,6 +228,6 @@ st.markdown("<div style='margin-bottom: 200px;'></div>", unsafe_allow_html=True)
 
 st.markdown(
     "<p style='text-align: center; font-size: 125%; color: #777;'>"
-    "<i>Made by the <span><strong>Alt+F4 Team 🫅🫅🫅🫅</strong></span></i></p>",
+    "<i>Made by <strong>🫅🫅 Ivan Dsouza, Max Gonsalves, Saville Dsilva & Vedant Chawardol 🫅🫅</strong></i></p>",
     unsafe_allow_html=True,
 )
