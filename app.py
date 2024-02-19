@@ -228,6 +228,6 @@ st.markdown("<div style='margin-bottom: 200px;'></div>", unsafe_allow_html=True)
 
 st.markdown(
     "<p style='text-align: center; font-size: 135%; color: #777;'>"
-    "<i>Made by <strong><a href='github.com/Ivan-3101' IvaN Dsouza</a>, Max Gonsalves, Saville Dsilva & Vedant Chawardol</strong></i></p>",
+    "<i>Made by <strong><a href='github.com/Ivan-3101'> IvaN Dsouza</a>, Max Gonsalves, Saville Dsilva & Vedant Chawardol</strong></i></p>",
     unsafe_allow_html=True,
 )
