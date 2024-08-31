@@ -226,7 +226,7 @@ st.info(
 
 st.markdown("<div style='margin-bottom: 200px;'></div>", unsafe_allow_html=True)
 
-st.markdown(
+#st.markdown(
     "<p style='text-align: center; font-size: 135%; color: #777;'>"
     "<i>Made by <strong><a style='text-decoration: none; color: #777;' href='github.com/Ivan-3101'> Ivan Dsouza</a>, Max Gonsalves, Saville Dsilva & Vedant Chawardol</strong></i></p>",
     unsafe_allow_html=True,
